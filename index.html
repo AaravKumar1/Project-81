@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Olympic Logo</title>
+    </head>
+    <style>
+        h1{
+            font-weight: 700;
+            color: chocolate;
+            font-size: 50px;
+        }
+        canvas{
+            background-color: white;
+            border: solid;
+            border-radius: 25px;
+            border-width: 15px;
+        }
+    </style>
+    <body background="https://www.h2-view.com/wp-content/files/17873/torch.png">
+        <center>
+        <h1><font face="cursive">Olympic Logo</font></h1>
+        <canvas id="myCanvas" width="800" height="600">
+    </body>
+    <script>
+        canvas=document.getElementById("myCanvas");
+        ctx= canvas.getContext("2d");
+
+        ctx.beginPath();
+        ctx.strokestyle="red";
+        ctx.lineWidth=1;
+        ctx.rect(182,190,430,200);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.strokeStyle="blue";
+        ctx.lineWidth=5.5;
+        ctx.arc(300,260,40,0,2*Math.PI);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.strokeStyle="black";
+        ctx.lineWidth=5.5;
+        ctx.arc(395,260,40,0,2*Math.PI);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.strokeStyle="red";
+        ctx.lineWidth=5.5;
+        ctx.arc(490,260,40,0,2*Math.PI);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.strokeStyle="yellow";
+        ctx.lineWidth=5.5;
+        ctx.arc(345,310,40,0,2*Math.PI);
+        ctx.stroke();
+        
+        ctx.beginPath();
+        ctx.strokeStyle="green";
+        ctx.lineWidth=5.5;
+        ctx.arc(440,310,40,0,2*Math.PI);
+        ctx.stroke();
+
+
+    </script>
+</html>
